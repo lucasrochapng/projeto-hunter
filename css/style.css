@@ -1,22 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 18px;
+    
   }
+
+h2 {
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+p, a {
+    font-family: 'Wix Madefor Text', sans-serif;
+}
 
 /* -------------- HEADER -------------- */
 .header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 10px;
+    padding: 5px 5px 5px 5px;
     background-color: rgb(194, 44, 44);
     width: 100%;
 }
 
 .h-div1 {
-    width: 50%
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    gap: 10px;
+}
+
+.h-div1 img {
+    padding: 5px;
+    background-color: white;
+}
+
+.h-div1 h2 {
+    font-size: 1.8rem;
+    color: white;
 }
 
 .h-div2 {
@@ -37,6 +64,7 @@
     color: white;
     font-size: 1rem;
     padding: 10px;
+    font-weight: bold;
 }
 
 .header nav ul {
@@ -44,7 +72,7 @@
 }
 
 .header nav ul li a:hover {
-    color: rgb(82, 0, 0)
+    color: rgb(148, 18, 18)
 }
 
 /* -------------- MAIN -------------- */
@@ -56,6 +84,12 @@
     justify-content: center;
 }
 
+.main h3 {
+    font-family: 'Alata', sans-serif;
+    font-size: 2.5rem;
+    color: rgb(148, 18, 18);
+}
+
 /* -------------- FOOTER -------------- */
 
 .footer{
@@ -64,7 +98,7 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(43, 43, 43);
-    color: white;
+    /* color: white; */
 }
 
 .footer1 {
@@ -85,6 +119,11 @@
     width: 40%;
 }
 
+.div1 p {
+    font-size: 0.8rem;
+    color: grey;
+}
+
 .div2 {
     display: flex;
     flex-direction: row;
@@ -92,6 +131,10 @@
     justify-content: end;
     gap: 40px;
     width: 60%;
+}
+
+.div2 h2 {
+    color: white;
 }
 
 .div2-1, .div2-2 {
@@ -104,7 +147,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 380px;
+    width: 351px;
 }
 
 .links {
@@ -126,15 +169,24 @@
     color: white;
 }
 
+.input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
 .input input {
-    padding: 5px;
+    padding: 5px 10px 5px 5px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    border: 1px solid rgb(43, 43, 43);
+    border: none;
+    outline: none;
 }
 
 .input input:focus {
-    border: 1px solid red;
+    
+    border: 2px solid rgb(255, 83, 83) !important;
 }
 
 .input input::placeholder {
@@ -145,13 +197,14 @@
 }
 
 .input button {
-    padding: 5px 10px;
+    padding: 7.6px 14px 7.6px 10px;
     background-color: brown;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border: none;
     color: white;
     cursor: pointer;
+    font-size: 0.8rem;
 }
 
 .input button:hover{
@@ -185,64 +238,6 @@ hr {
     width: 40px;
     padding-bottom: 15px;
 }
-
-/*
-.f-div1 {
-    width: 30%
-}
-
-.f-div1 p {
-    font-size: 1rem;
-}
-
-.f-div2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:left;
-    gap: 30px;
-    width: 70%
-}
-
-
-
-.d1 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.links {
-    display: flex;
-    flex-direction: column;  
-}
-
-.links ul {
-    list-style-type: none;
-}
-
-.links a {
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-}
-
-.d2 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.redes {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-.redes a img {
-    width: 40px;
-} */
-
 
 
 
