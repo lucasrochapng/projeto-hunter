@@ -50,21 +50,136 @@
 /* -------------- MAIN -------------- */
 
 /* -------------- FOOTER -------------- */
+
 .footer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    padding: 50px;
+    justify-content: center;
     background-color: rgb(43, 43, 43);
-    width: 100%;
     color: white;
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    padding: 30px;
+    width: 100%;
+    gap: 20px;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: left;
+    width: 40%;
+}
+
+.div2 {
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    justify-content: end;
+    gap: 40px;
+    width: 60%;
+}
+
+.div2-1, .div2-2 {
+    display: flex;
+    flex-direction: column;
     gap: 10px;
+}
+
+.div2-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 380px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;  
+}
+
+.links ul {
+    list-style-type: none;
+}
+
+.links a {
+    text-decoration: none;
+    color: rgb(136, 136, 136);
+    font-size: 0.8rem;
+}
+
+.links a:hover {
+    color: white;
+}
+
+.input input {
+    padding: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid rgb(43, 43, 43);
+}
+
+.input input:focus {
+    border: 1px solid red;
+}
+
+.input input::placeholder {
+    color: grey;
+    font-style: italic;
+    font-size: 0.8rem;
+    padding-left: 8px;
+}
+
+.input button {
+    padding: 5px 10px;
+    background-color: brown;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.input button:hover{
+    background-color: rgb(107, 28, 28);
+}
+
+.div2-3 p {
+    font-size: 0.8rem;
+    color: grey;
 }
 
 .footer div img {
     width: 200px;
 }
 
+hr {
+    margin: 15px 0 15px 0;
+    width: 98%;
+    border-color: rgb(77, 77, 77);
+}
+
+.footer2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer2 a img {
+    width: 40px;
+    padding-bottom: 15px;
+}
+
+/*
 .f-div1 {
     width: 30%
 }
@@ -119,7 +234,7 @@
 
 .redes a img {
     width: 40px;
-}
+} */
 
 
 
