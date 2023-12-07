@@ -77,6 +77,8 @@ p, a {
 /* -------------- MAIN -------------- */
 
 .main {
+    background-image: url("../img/wallpaper.jpg");
+    background-size: cover;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -88,7 +90,7 @@ p, a {
 .main h3 {
     font-family: 'Alata', sans-serif;
     font-size: 2.5rem;
-    color: rgb(148, 18, 18);
+    color: rgb(255, 255, 255);
 }
 
 .container {
@@ -104,11 +106,12 @@ p, a {
     background-size: cover;
     width: auto;
     max-height: 200px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
+    border-radius: 50%;
 }
 
 .card {
-    border: 2px solid rgb(0, 0, 0);
+    /* border: 2px solid rgb(0, 0, 0); */
     border-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -123,7 +126,7 @@ p, a {
     cursor: pointer;
     transition: box-shadow 0.3s, transform 0.3s;
 
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.288);
 }
 
 .card:hover {
@@ -134,7 +137,7 @@ p, a {
 .card-title {
     font-family: 'Ysabeau SC', sans-serif;
     font-size: 1.5rem;
-    color: rgb(148, 18, 18);
+    color: rgb(255, 255, 255);
 }
 
 .card-profession {
@@ -146,8 +149,10 @@ p, a {
 
 .card-botao{
     background-color: rgb(194, 44, 44);
-    border-radius: 10px;
-    padding: 5px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 45px 5px 45px;
 }
 
 .card-botao:hover{
