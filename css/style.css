@@ -7,8 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 18px;
-    
-  }
+}
 
 h2 {
     font-family: 'Ysabeau SC', sans-serif;
@@ -26,6 +25,7 @@ p, a {
     padding: 5px 5px 5px 5px;
     background-color: rgb(194, 44, 44);
     width: 100%;
+    min-height: 10vh;
 }
 
 .h-div1 {
@@ -56,7 +56,6 @@ p, a {
 
 .header div img {
     width: 60px;
-    
 }
 
 .header nav ul li a {
@@ -82,6 +81,8 @@ p, a {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    min-height: 85vh;
+    padding: 5vh 0;
 }
 
 .main h3 {
@@ -90,21 +91,83 @@ p, a {
     color: rgb(148, 18, 18);
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card-img {
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    max-height: 200px;
+    border-radius: 5px;
+}
+
+.card {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 30%;
+    width: auto;
+    max-width: 400px;
+    padding: 0.8rem;
+    max-height: 400px;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
+
+    background-color: white;
+}
+
+.card:hover {
+    box-shadow: -1px 5px 13px 0px rgba(0, 0, 0, 0.75);
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 1.5rem;
+    color: rgb(148, 18, 18);
+}
+
+.card-profession {
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    white-space: pre-line;
+}
+
+.card-botao{
+    background-color: rgb(194, 44, 44);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.card-botao:hover{
+    background-color: rgb(250, 44, 44);
+}
+
 /* -------------- FOOTER -------------- */
 
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgb(43, 43, 43);
-    /* color: white; */
 }
 
 .footer1 {
     display: flex;
     flex-direction: row;
-    align-items:center;
+    align-items: center;
     justify-content: space-around;
     padding: 30px;
     width: 100%;
@@ -127,7 +190,7 @@ p, a {
 .div2 {
     display: flex;
     flex-direction: row;
-    align-items:baseline;
+    align-items: baseline;
     justify-content: end;
     gap: 40px;
     width: 60%;
@@ -152,7 +215,7 @@ p, a {
 
 .links {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
 }
 
 .links ul {
@@ -185,7 +248,6 @@ p, a {
 }
 
 .input input:focus {
-    
     border: 2px solid rgb(255, 83, 83) !important;
 }
 
@@ -207,7 +269,7 @@ p, a {
     font-size: 0.8rem;
 }
 
-.input button:hover{
+.input button:hover {
     background-color: rgb(201, 53, 53);
 }
 
@@ -243,20 +305,20 @@ hr {
 
 @media (max-width: 600px) {
     * {
-      font-size: 22px;
+        font-size: 22px;
     }
-  
+
     .card {
-      width: 80%;
+        width: 80%;
     }
-  }
-  
-  @media (min-width: 601px) and (max-width: 801px) {
+}
+
+@media (min-width: 601px) and (max-width: 801px) {
     * {
-      font-size: 20px;
+        font-size: 20px;
     }
-  
+
     .card {
-      width: 40%;
+        width: 40%;
     }
-  }
+}
