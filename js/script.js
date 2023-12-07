@@ -103,3 +103,15 @@ window.addEventListener("load", async () => {
 
     criarCardExemplo();
 });
+
+
+//input do footer
+function limparEMostrarMensagem() {
+    var input = document.getElementById("mensagemInput");
+    var mensagemUsuario = document.getElementById("mensagemParaUsuario");
+    var balao = document.getElementById("balao");
+
+    input.value = "";
+    mensagemUsuario.textContent = "Seu email foi registrado!";
+
+}

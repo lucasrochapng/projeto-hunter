@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styleAdotar.css" />
+    <title>Adoção</title>
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <ul>
+          <li>
+            <a href="index.html">
+              <img
+                src="./img/LOGO.png"
+                class="menu-logo"
+                alt="Logo Pet Adoção"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form
+        action="https://formsubmit.co/taynara.dutra@ifpr.edu.br"
+        method="post"
+      >
+        <div class="form-item">
+          <label for="nome">Nome: </label>
+          <input type="text" name="nome" id="nome" value="Taynara" required />
+        </div>
+        <div class="form-item">
+          <label for="telefone">Telefone: </label>
+          <input
+            type="number"
+            name="telefone"
+            id="telefone"
+            value="545454545"
+            required
+          />
+        </div>
+        <div class="form-item">
+          <label for="email">E-mail: </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            value="taynara@gmail.com"
+          />
+        </div>
+        <div class="form-item">
+          <span for="">Informe a sua renda:</span>
+
+          <div class="form-item-radio">
+            <input type="radio" name="renda" id="renda1000" value="1000" />
+            <label for="renda1000">Até R$ 1000,00</label>
+          </div>
+
+          <div class="form-item-radio">
+            <input type="radio" name="renda" id="renda5000" value="5000" />
+            <label for="renda5000">Até R$ 5000,00</label>
+          </div>
+
+          <div class="form-item-radio">
+            <input type="radio" name="renda" id="renda10000" value="10000" />
+            <label for="renda10000">Até R$ 10000,00</label>
+          </div>
+
+          <span id="erro-renda" class="msgm-erro">Informe a sua renda</span>
+        </div>
+
+        <div class="form-item">
+          <label for="residencia"> Informe o tipo da sua residência: </label>
+          <select name="residencia" id="residencia">
+            <option selected>Selecione uma opção</option>
+            <option value="casa">Casa</option>
+            <option value="apartamento">Apartamento</option>
+            <option value="sitio">Sítio</option>
+          </select>
+        </div>
+
+        <div class="form-item">
+          <label for="intencao">Informe suas intenções de adoção:</label>
+          <textarea name="intencao" id="intencao"></textarea>
+        </div>
+
+        <div class="form-item">
+          <input type="reset" value="Limpar" />
+          <input type="submit" value="Enviar" />
+        </div>
+      </form>
+    </main>
+
+    <script src="./js/adotar.js"></script>
+  </body>
+</html>

@@ -301,7 +301,9 @@ hr {
     padding-bottom: 15px;
 }
 
-
+#mensagemParaUsuario {
+    color: red;
+}
 
 @media (max-width: 600px) {
     * {
