@@ -47,7 +47,7 @@ const createCharacterLocally = () => {
 const criarCardExemplo = () => {
     const exemploCharacter = {
         id: 1,
-        img: "../img/manny.png",
+        img: "../img/killua.jpg",
         name: "Name",
         professions: ["Profissão 1", "Profissão 2"],
     };
