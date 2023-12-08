@@ -102,6 +102,14 @@ menuToggler.addEventListener('click', function() {
     corAtiva = !corAtiva;
 });
 
+//scroll
+function scrollDown() {
+    var container = document.getElementById("hunter");
+    var containerPosition = container.offsetTop;
+    window.scrollTo({ top: containerPosition, behavior: "smooth"});
+
+}
+
 
 
 

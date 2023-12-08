@@ -88,11 +88,78 @@ p, a {
     background-size: cover;
     background-position: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 90vh;
-    padding: 3rem 0;
+    /* padding: 3rem 0; */
+    padding: 0 0 3rem 0;
+    
+}
+
+
+
+.hisoka {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* min-height: 300px; */
+}
+
+.hisoka-img {
+    width: 50%;
+}
+
+.hisoka-img img {
+    width: 500px;
+}
+
+.hisoka-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.hisoka-text h1 {
+    font-family: 'Alata', sans-serif;
+    font-size: 3rem;
+    color: white;
+}
+
+.hisoka-text h2 {
+    font-family: 'Alata', sans-serif;
+    font-size: 5.7rem;
+    color: rgb(194, 44, 44);
+    font-weight: bold;
+    margin-top: -30px;
+}
+
+.hisoka-text button {
+    background-color: white;
+    color: rgb(194, 44, 44);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1.55rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.hisoka-text button:hover {
+    transform: scale(1.05);
+    background-color: rgb(194, 194, 194);
+}
+
+.hunter h2 {
+    font-family: 'Alata', sans-serif;
+    font-size: 3rem;
+    color: white;
+    
 }
 
 .main h3 {
