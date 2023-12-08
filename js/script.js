@@ -22,50 +22,14 @@ const criarCards = () => {
             <p class="card-profession">${character.professions.join("\n")}</p>
             <a class="card-botao"> CONTRATAR </a>
         `;
-        card.addEventListener("click", () => {
-            showModal(character);
-        });
         container.appendChild(card);
     });
 };
 
-const showModal = (character) => {
-    const modal = document.createElement("div");
-    modal.classList.add("modal");
-
-    const modalContent = document.createElement("div");
-    modalContent.classList.add("modal-content");
-
-    const closeBtn = document.createElement("span");
-    closeBtn.classList.add("close-btn");
-    closeBtn.innerHTML = "&times;";
-    closeBtn.addEventListener("click", () => {
-        modal.remove();
-    });
-
-    modalContent.innerHTML = `
-        <h2>${character.name}</h2>
-        <p>${character.professions.join("\n")}</p>
-        <!-- Add more details as needed -->
-    `;
-
-    const deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "Delete";
-    deleteBtn.addEventListener("click", () => {
-        deleteCharacterLocally(character._id);
-        modal.remove();
-        container.innerHTML = "";
-        criarCards();
-    });
-
-    modalContent.appendChild(closeBtn);
-    modalContent.appendChild(deleteBtn);
-    modal.appendChild(modalContent);
-    document.body.appendChild(modal);
-};
-
 const deleteCharacterLocally = (characterId) => {
     characters = characters.filter((character) => character._id !== characterId);
+    container.innerHTML = "";
+    criarCards();
 };
 
 const createCharacterLocally = () => {
@@ -83,8 +47,8 @@ const createCharacterLocally = () => {
 const criarCardExemplo = () => {
     const exemploCharacter = {
         id: 1,
-        img: "../img/gif.gif",
-        name: "Exemplo Personagem",
+        img: "../img/manny.png",
+        name: "Name",
         professions: ["Profissão 1", "Profissão 2"],
     };
 
@@ -115,3 +79,29 @@ function limparEMostrarMensagem() {
     mensagemUsuario.textContent = "Seu email foi registrado!";
 
 }
+
+
+
+const menuToggle = document.querySelector('.menu-toggler');
+const menu = document.querySelector('.menu');
+
+menuToggle.addEventListener('click', function() {
+    menu.classList.toggle('active');
+});
+
+const menuToggler = document.querySelector('.menu-toggler');
+let corAtiva = false;
+
+menuToggler.addEventListener('click', function() {
+
+    if (corAtiva) {
+        menuToggler.style.backgroundColor = '';
+    } else {
+        menuToggler.style.backgroundColor = 'rgb(146, 36, 36)';
+    }
+    corAtiva = !corAtiva;
+});
+
+
+
+
