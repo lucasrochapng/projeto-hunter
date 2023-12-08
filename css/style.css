@@ -621,6 +621,15 @@ hr {
     font-style: italic;
     font-size: 0.8rem;
     padding-left: 4px;
+
+    
+}
+
+#descricao[type="text"]::placeholder {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
 }
 
 .formulario p {
@@ -659,6 +668,7 @@ hr {
 #descricao {
     width: 450px;
     height: 100px;
+    overflow-wrap: break-word ;
 }
 
 .concordo {
