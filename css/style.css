@@ -13,7 +13,7 @@ h2 {
     font-family: 'Ysabeau SC', sans-serif;
 }
 
-p, a {
+p, a , label{
     font-family: 'Wix Madefor Text', sans-serif;
 }
 
@@ -552,4 +552,137 @@ hr {
     .card {
         width: 40%;
     }
+}
+
+/* --------------- FORMULÁRIO ----------------*/
+
+.secao-form {
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.form-img img {
+    width: 500px;
+}
+
+.form-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 30px 50px 30px 50px;
+    border-radius: 10px;
+
+}
+
+.formulario h2 {
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-size: 1.5rem;
+    color: brown;
+    font-weight: bold;
+}
+
+.formulario input {
+    width: 450px;
+    border-radius: 5px;
+    border: 1px solid rgb(177, 177, 177);
+    padding: 5px;
+    outline: none;
+}
+
+.formulario input:focus {
+    border: 2px solid rgb(255, 83, 83)!important;
+}
+
+.formulario input::placeholder {
+    color: grey;
+    font-style: italic;
+    font-size: 0.8rem;
+    padding-left: 4px;
+}
+
+.formulario p {
+    font-size: 0.8rem;
+    color: rgb(56, 56, 56);
+}
+
+.formulario-dados {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.formulario-radios {
+    display: flex;
+    flex-direction: row;  
+    gap: 10px;  
+}
+
+.opcao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+}
+
+.opcao input {
+    width: 30px;
+}
+
+.opcao label {
+    font-size: 0.8rem;
+    color: rgb(56, 56, 56);
+    
+}
+
+#descricao {
+    width: 450px;
+    height: 100px;
+}
+
+.concordo {
+    display: flex;
+    flex-direction: row;
+}
+
+.concordo input {
+    width: 30px;
+}
+
+.concordo label {
+    font-size: 0.8rem;
+    color: rgb(56, 56, 56);
+}
+
+#submit {
+    background-color: brown;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    padding: 5px;
+}
+
+#submit:hover {
+    background-color: rgb(201, 53, 53);
 }
