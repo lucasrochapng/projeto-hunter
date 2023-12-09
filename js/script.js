@@ -2,15 +2,15 @@ const container = document.getElementById("container");
 
 let characters = [];
 
-// const getAllCharacters = async () => {
-//     try {
-//         const response = await fetch("https://your-character-api-endpoint.com/characters");
-//         characters = await response.json();
-//     } catch (error) {
-//         console.error("Error fetching data:", error);
-//         characters = [];
-//     }
-// };
+const getAllCharacters = async () => {
+    try {
+        const response = await fetch("https://your-character-api-endpoint.com/characters");
+        characters = await response.json();
+    } catch (error) {
+        console.error("Error fetching data:", error);
+        characters = [];
+    }
+};
 
 const criarCards = () => {
     characters.forEach((character) => {
@@ -47,7 +47,7 @@ const createCharacterLocally = () => {
 const criarCardExemplo = () => {
     const exemploCharacter = {
         id: 1,
-        img: "../img/killua.jpg",
+        img: "../img/manny.png",
         name: "Name",
         professions: ["Profissão 1", "Profissão 2"],
     };
@@ -66,6 +66,22 @@ window.addEventListener("load", async () => {
     //criarCards();
 
     criarCardExemplo();
+
+    let cards = document.querySelectorAll(".card");
+    cards.forEach((elemento) => {
+        elemento.addEventListener("mouseover", () => {
+            elemento.classList.add("change-scale");
+        });
+
+        elemento.addEventListener("mouseout", () => {
+            elemento.classList.remove("change-scale");
+        });
+
+        elemento.lastElementChild.addEventListener("click", (event) => {
+            window.location.href = "./formulario.html";
+        });
+
+    });
 });
 
 

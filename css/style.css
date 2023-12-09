@@ -82,9 +82,8 @@ p, a , label{
 }
 
 /* -------------- MAIN -------------- */
-
 .main {
-    background-image: url("../img/wallpaper-hisoka.jpg");
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/wallpaper-hisoka.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -163,7 +162,7 @@ p, a , label{
 .hunter h2 {
     font-family: 'Alata', sans-serif;
     font-size: 2rem;
-    color:rgb(148, 18, 18);
+    color:white;
     
 }
 
@@ -419,6 +418,12 @@ hr {
         font-size: 22px;
     }
 
+    .hisoka-img{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
     h2{
         font-size: 2rem;
     }
@@ -563,6 +568,7 @@ hr {
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 90vh;
 }
 
 .form-img {
@@ -574,7 +580,7 @@ hr {
 }
 
 .form-img img {
-    width: 500px;
+    width: 495px;
 }
 
 .form-text {
